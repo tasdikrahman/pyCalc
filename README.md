@@ -2,6 +2,10 @@
 
 A simple calculator made using `tkinter`. 
 
-## Feutures : 
+## Features : 
 
 * Cross-platform
+
+## License :
+
+[Apache License](ww.apache.org/licenses/LICENSE-2.0.html)
