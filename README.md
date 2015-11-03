@@ -8,4 +8,4 @@ A simple calculator made using `tkinter`.
 
 ## License :
 
-[Apache License](www.apache.org/licenses/LICENSE-2.0.html)
+[Apache License](https://github.com/prodicus/pyCalc/blob/master/LICENSE)
