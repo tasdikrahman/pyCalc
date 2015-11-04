@@ -14,4 +14,4 @@ A simple calculator made using `tkinter`.
 
 ## License :
 
-[Apache License](https://github.com/prodicus/pyCalc/blob/master/LICENSE) &copy Tasdik Rahman
+[Apache License](https://github.com/prodicus/pyCalc/blob/master/LICENSE) &copy; Tasdik Rahman
