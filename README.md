@@ -4,13 +4,30 @@ A simple calculator made using `tkinter`.
 
 ## Features : 
 
+### Version1.0
+
 * Cross-platform
+* easy to use
+* supports normal mathematical functions like 
+ - `+`
+ - `-`
+ - '*'
+ - `/`
+ - `%`
+ - `exp`
+ - `^2`
+ - `x!`
+ * Supports `undo` and `AC`
 
-## List of possible features for future versions
+##Usage:
 
-* adding other mathematical functions (eg: square root, modulo et el)
+![]()
+
+### List of possible features for future versions
+
+* adding other mathematical functions (eg: `log`, `ln` et el)
 * increasing the font for the GUI
-* adding "delete last entered input" i.e. undo
+* Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)
 
 ## License :
 
