@@ -9,14 +9,11 @@ A simple calculator made using `tkinter`.
 * Cross-platform
 * easy to use
 * supports normal mathematical functions like 
- - `+`
- - `-`
- - `*`s
- - `/`
- - `%`
- - `exp`
- - `^2`
- - `x!`
+
+| `+`   | `-`  | `*`  | `/`  |
+|:-:|---|---|---|
+| `exp`  |  `x!` | `^2`  |  `%` |
+
 * Supports `undo` and `AC`
 
 ##Usage:
@@ -30,7 +27,7 @@ You can download the executable for
 * `*nix` based systems and `Mac` users: [Download executable](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc?raw=true)
 * windows : Adding executable soon
 
-### List of possible features for future versions
+### To-do
 
 * refactoring for adding `oop`'s 
 * adding other mathematical functions (eg: `log`, `ln` et el)
