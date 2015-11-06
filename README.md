@@ -17,11 +17,18 @@ A simple calculator made using `tkinter`.
  - `exp`
  - `^2`
  - `x!`
- * Supports `undo` and `AC`
+* Supports `undo` and `AC`
 
 ##Usage:
 
-![]()
+![Usage](https://raw.githubusercontent.com/prodicus/pyCalc/master/pyCalc_usage.gif)
+
+##Executable:
+
+You can download the executable for 
+
+* `*nix` based systems : [Download executable](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc?raw=true)
+* windows : Adding support soon
 
 ### List of possible features for future versions
 
