@@ -1,8 +1,6 @@
 #!/usr/bin/env python3.4
 from tkinter import *
 import parser
-import stack
-
 
 root = Tk()
 root.title('Calculator')
