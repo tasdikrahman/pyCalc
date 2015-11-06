@@ -11,7 +11,7 @@ A simple calculator made using `tkinter`.
 * supports normal mathematical functions like 
  - `+`
  - `-`
- - '*'
+ - `*`s
  - `/`
  - `%`
  - `exp`
@@ -27,11 +27,12 @@ A simple calculator made using `tkinter`.
 
 You can download the executable for 
 
-* `*nix` based systems and Mac users: [Download executable](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc?raw=true)
+* `*nix` based systems and `Mac` users: [Download executable](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc?raw=true)
 * windows : Adding executable soon
 
 ### List of possible features for future versions
 
+* refactoring for adding `oop`'s 
 * adding other mathematical functions (eg: `log`, `ln` et el)
 * increasing the font for the GUI
 * Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)
