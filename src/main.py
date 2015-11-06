@@ -5,18 +5,23 @@ import parser
 root = Tk()
 root.title('Calculator')
 
-i = 0
+###### Constants
+##
+FONT_LARGE = ("Calibri", 12)      ## selects the font of the text inside buttons
+FONT_MED = ("Calibri", 10)
+MAX_ROW = 4                        ## Max rows and columns in the GUI
+MAX_COLUMN = 5
+i = 0       ## for the insertion counter in Entry widget
+###############
 
-def factorial():
+def factorial(operator):
     """Calculates the factorial of the number entered."""
-    whole_string = display.get()
-    number = int(whole_string)
+    number = int(display.get())
     fact = 1
-    counter = number 
     try:
-        while counter > 0:
-            fact = fact*counter
-            counter -= 1
+        while number > 0:
+            fact = fact*number
+            number -= 1
         clear_all()
         display.insert(0, fact)
     except Exception:
@@ -69,76 +74,72 @@ def calculate():
         clear_all()
         display.insert(0, "Error!")
 
-root.columnconfigure(0,pad=3)
-root.columnconfigure(1,pad=3)
-root.columnconfigure(2,pad=3)
-root.columnconfigure(3,pad=3)
-root.columnconfigure(4,pad=3)
 
-root.rowconfigure(0,pad=3)
-root.rowconfigure(1,pad=3)
-root.rowconfigure(2,pad=3)
-root.rowconfigure(3,pad=3)
+for row in range(MAX_ROW):
+    root.columnconfigure(row,pad=3)
+
+for column in range(MAX_COLUMN):
+    root.rowconfigure(column,pad=3)
 
 display = Entry(root, font = ("Calibri", 13))
 display.grid(row = 1, columnspan = 6    , sticky = W+E)
 
-one = Button(root, text = "1", command = lambda : get_variables(1), font=("Calibri", 12))
+one = Button(root, text = "1", command = lambda : get_variables(1), font=FONT_LARGE)
 one.grid(row = 2, column = 0)
-two = Button(root, text = "2", command = lambda : get_variables(2), font=("Calibri", 12))
+two = Button(root, text = "2", command = lambda : get_variables(2), font=FONT_LARGE)
 two.grid(row = 2, column = 1)
-three = Button(root, text = "3", command = lambda : get_variables(3), font=("Calibri", 12))
+three = Button(root, text = "3", command = lambda : get_variables(3), font=FONT_LARGE)
 three.grid(row = 2, column = 2)
 
-four = Button(root, text = "4", command = lambda : get_variables(4), font=("Calibri", 12))
+four = Button(root, text = "4", command = lambda : get_variables(4), font=FONT_LARGE)
 four.grid(row = 3 , column = 0)
-five = Button(root, text = "5", command = lambda : get_variables(5), font=("Calibri", 12))
+five = Button(root, text = "5", command = lambda : get_variables(5), font=FONT_LARGE)
 five.grid(row = 3, column = 1)
-six = Button(root, text = "6", command = lambda : get_variables(6), font=("Calibri", 12))
+six = Button(root, text = "6", command = lambda : get_variables(6), font=FONT_LARGE)
 six.grid(row = 3, column = 2)
 
-seven = Button(root, text = "7", command = lambda : get_variables(7), font=("Calibri", 12))
+seven = Button(root, text = "7", command = lambda : get_variables(7), font=FONT_LARGE)
 seven.grid(row = 4, column = 0)
-eight = Button(root, text = "8", command = lambda : get_variables(8), font=("Calibri", 12))
+eight = Button(root, text = "8", command = lambda : get_variables(8), font=FONT_LARGE)
 eight.grid(row = 4, column = 1)
-nine = Button(root , text = "9", command = lambda : get_variables(9), font=("Calibri", 12))
+nine = Button(root , text = "9", command = lambda : get_variables(9), font=FONT_LARGE)
 nine.grid(row = 4, column = 2)
 
-cls = Button(root, text = "AC", command = clear_all, font=("Calibri", 12), foreground = "red")
+cls = Button(root, text = "AC", command = clear_all, font=FONT_LARGE, foreground = "red")
 cls.grid(row = 5, column = 0)
-zero = Button(root, text = "0", command = lambda : get_variables(0), font=("Calibri", 12))
+zero = Button(root, text = "0", command = lambda : get_variables(0), font=FONT_LARGE)
 zero.grid(row = 5, column = 1)
-result = Button(root, text = "=", command = calculate, font=("Calibri", 12), foreground = "red")
+result = Button(root, text = "=", command = calculate, font=FONT_LARGE, foreground = "red")
 result.grid(row = 5, column = 2)
 
-plus = Button(root, text = "+", command =  lambda : get_operation("+"), font=("Calibri", 12))
+plus = Button(root, text = "+", command =  lambda : get_operation("+"), font=FONT_LARGE)
 plus.grid(row = 2, column = 3)
-minus = Button(root, text = "-", command =  lambda : get_operation("-"), font=("Calibri", 12))
+minus = Button(root, text = "-", command =  lambda : get_operation("-"), font=FONT_LARGE)
 minus.grid(row = 3, column = 3)
-multiply = Button(root,text = "*", command =  lambda : get_operation("*"), font=("Calibri", 12))
+multiply = Button(root,text = "*", command =  lambda : get_operation("*"), font=FONT_LARGE)
 multiply.grid(row = 4, column = 3)
-divide = Button(root, text = "/", command = lambda :  get_operation("/"), font=("Calibri", 12))
+divide = Button(root, text = "/", command = lambda :  get_operation("/"), font=FONT_LARGE)
 divide.grid(row = 5, column = 3)
 
 # adding new operations
-pi = Button(root, text = "pi", command = lambda: get_operation("*3.14"), font =("Calibri", 12))
+pi = Button(root, text = "pi", command = lambda: get_operation("*3.14"), font =FONT_LARGE)
 pi.grid(row = 2, column = 4)
-modulo = Button(root, text = "%", command = lambda :  get_operation("%"), font=("Calibri", 12))
+modulo = Button(root, text = "%", command = lambda :  get_operation("%"), font=FONT_LARGE)
 modulo.grid(row = 3, column = 4)
-left_bracket = Button(root, text = "(", command = lambda: get_operation("("), font =("Calibri", 12))
+left_bracket = Button(root, text = "(", command = lambda: get_operation("("), font =FONT_LARGE)
 left_bracket.grid(row = 4, column = 4)
-exp = Button(root, text = "exp", command = lambda: get_operation("**"), font = ("Calibri", 10))
+exp = Button(root, text = "exp", command = lambda: get_operation("**"), font = FONT_MED)
 exp.grid(row = 5, column = 4)
 
 ## To be added :
 # sin, cos, log, ln
-undo_button = Button(root, text = "<-", command = undo, font =("Calibri", 12), foreground = "red")
+undo_button = Button(root, text = "<-", command = undo, font =FONT_LARGE, foreground = "red")
 undo_button.grid(row = 2, column = 5)
-fact = Button(root, text = "x!", command = factorial, font=("Calibri", 12))
+fact = Button(root, text = "x!", command = lambda: factorial("!"), font=FONT_LARGE)
 fact.grid(row = 3, column = 5)
-right_bracket = Button(root, text = ")", command = lambda: get_operation(")"), font =("Calibri", 12))
+right_bracket = Button(root, text = ")", command = lambda: get_operation(")"), font =FONT_LARGE)
 right_bracket.grid(row = 4, column = 5)
-square = Button(root, text = "^2", command = lambda: get_operation("**2"), font = ("Calibri", 10))
+square = Button(root, text = "^2", command = lambda: get_operation("**2"), font = FONT_MED)
 square.grid(row = 5, column = 5)
 
 root.mainloop()
