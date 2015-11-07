@@ -1,8 +1,8 @@
 #!/usr/bin/env python3.4
-from tkinter import *
+import tkinter as tk
 import parser
 
-root = Tk()
+root = tk.Tk()
 root.title('Calculator')
 
 ###### Constants
@@ -81,65 +81,65 @@ for row in range(MAX_ROW):
 for column in range(MAX_COLUMN):
     root.rowconfigure(column,pad=3)
 
-display = Entry(root, font = ("Calibri", 13))
+display = tk.Entry(root, font = ("Calibri", 13))
 display.grid(row = 1, columnspan = 6    , sticky = W+E)
 
-one = Button(root, text = "1", command = lambda : get_variables(1), font=FONT_LARGE)
+one = tk.Button(root, text = "1", command = lambda : get_variables(1), font=FONT_LARGE)
 one.grid(row = 2, column = 0)
-two = Button(root, text = "2", command = lambda : get_variables(2), font=FONT_LARGE)
+two = tk.Button(root, text = "2", command = lambda : get_variables(2), font=FONT_LARGE)
 two.grid(row = 2, column = 1)
-three = Button(root, text = "3", command = lambda : get_variables(3), font=FONT_LARGE)
+three = tk.Button(root, text = "3", command = lambda : get_variables(3), font=FONT_LARGE)
 three.grid(row = 2, column = 2)
 
-four = Button(root, text = "4", command = lambda : get_variables(4), font=FONT_LARGE)
+four = tk.Button(root, text = "4", command = lambda : get_variables(4), font=FONT_LARGE)
 four.grid(row = 3 , column = 0)
-five = Button(root, text = "5", command = lambda : get_variables(5), font=FONT_LARGE)
+five = tk.Button(root, text = "5", command = lambda : get_variables(5), font=FONT_LARGE)
 five.grid(row = 3, column = 1)
-six = Button(root, text = "6", command = lambda : get_variables(6), font=FONT_LARGE)
+six = tk.Button(root, text = "6", command = lambda : get_variables(6), font=FONT_LARGE)
 six.grid(row = 3, column = 2)
 
-seven = Button(root, text = "7", command = lambda : get_variables(7), font=FONT_LARGE)
+seven = tk.Button(root, text = "7", command = lambda : get_variables(7), font=FONT_LARGE)
 seven.grid(row = 4, column = 0)
-eight = Button(root, text = "8", command = lambda : get_variables(8), font=FONT_LARGE)
+eight = tk.Button(root, text = "8", command = lambda : get_variables(8), font=FONT_LARGE)
 eight.grid(row = 4, column = 1)
-nine = Button(root , text = "9", command = lambda : get_variables(9), font=FONT_LARGE)
+nine = tk.Button(root , text = "9", command = lambda : get_variables(9), font=FONT_LARGE)
 nine.grid(row = 4, column = 2)
 
-cls = Button(root, text = "AC", command = clear_all, font=FONT_LARGE, foreground = "red")
+cls = tk.Button(root, text = "AC", command = clear_all, font=FONT_LARGE, foreground = "red")
 cls.grid(row = 5, column = 0)
-zero = Button(root, text = "0", command = lambda : get_variables(0), font=FONT_LARGE)
+zero = tk.Button(root, text = "0", command = lambda : get_variables(0), font=FONT_LARGE)
 zero.grid(row = 5, column = 1)
-result = Button(root, text = "=", command = calculate, font=FONT_LARGE, foreground = "red")
+result = tk.Button(root, text = "=", command = calculate, font=FONT_LARGE, foreground = "red")
 result.grid(row = 5, column = 2)
 
-plus = Button(root, text = "+", command =  lambda : get_operation("+"), font=FONT_LARGE)
+plus = tk.Button(root, text = "+", command =  lambda : get_operation("+"), font=FONT_LARGE)
 plus.grid(row = 2, column = 3)
-minus = Button(root, text = "-", command =  lambda : get_operation("-"), font=FONT_LARGE)
+minus = tk.Button(root, text = "-", command =  lambda : get_operation("-"), font=FONT_LARGE)
 minus.grid(row = 3, column = 3)
-multiply = Button(root,text = "*", command =  lambda : get_operation("*"), font=FONT_LARGE)
+multiply = tk.Button(root,text = "*", command =  lambda : get_operation("*"), font=FONT_LARGE)
 multiply.grid(row = 4, column = 3)
-divide = Button(root, text = "/", command = lambda :  get_operation("/"), font=FONT_LARGE)
+divide = tk.Button(root, text = "/", command = lambda :  get_operation("/"), font=FONT_LARGE)
 divide.grid(row = 5, column = 3)
 
 # adding new operations
-pi = Button(root, text = "pi", command = lambda: get_operation("*3.14"), font =FONT_LARGE)
+pi = tk.Button(root, text = "pi", command = lambda: get_operation("*3.14"), font =FONT_LARGE)
 pi.grid(row = 2, column = 4)
-modulo = Button(root, text = "%", command = lambda :  get_operation("%"), font=FONT_LARGE)
+modulo = tk.Button(root, text = "%", command = lambda :  get_operation("%"), font=FONT_LARGE)
 modulo.grid(row = 3, column = 4)
-left_bracket = Button(root, text = "(", command = lambda: get_operation("("), font =FONT_LARGE)
+left_bracket = tk.Button(root, text = "(", command = lambda: get_operation("("), font =FONT_LARGE)
 left_bracket.grid(row = 4, column = 4)
-exp = Button(root, text = "exp", command = lambda: get_operation("**"), font = FONT_MED)
+exp = tk.Button(root, text = "exp", command = lambda: get_operation("**"), font = FONT_MED)
 exp.grid(row = 5, column = 4)
 
 ## To be added :
 # sin, cos, log, ln
-undo_button = Button(root, text = "<-", command = undo, font =FONT_LARGE, foreground = "red")
+undo_button = tk.Button(root, text = "<-", command = undo, font =FONT_LARGE, foreground = "red")
 undo_button.grid(row = 2, column = 5)
-fact = Button(root, text = "x!", command = lambda: factorial("!"), font=FONT_LARGE)
+fact = tk.Button(root, text = "x!", command = lambda: factorial("!"), font=FONT_LARGE)
 fact.grid(row = 3, column = 5)
-right_bracket = Button(root, text = ")", command = lambda: get_operation(")"), font =FONT_LARGE)
+right_bracket = tk.Button(root, text = ")", command = lambda: get_operation(")"), font =FONT_LARGE)
 right_bracket.grid(row = 4, column = 5)
-square = Button(root, text = "^2", command = lambda: get_operation("**2"), font = FONT_MED)
+square = tk.Button(root, text = "^2", command = lambda: get_operation("**2"), font = FONT_MED)
 square.grid(row = 5, column = 5)
 
 root.mainloop()
