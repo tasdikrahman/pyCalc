@@ -8,7 +8,7 @@ A simple calculator made using `tkinter`.
 
 * Cross-platform
 * easy to use
-* supports normal mathematical functions like 
+* supports common mathematical functions like 
 
 | `+`   | `-`  | `*`  | `/`  |
 |:-:|---|---|---|

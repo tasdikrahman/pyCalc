@@ -1,0 +1,16 @@
+language: python
+sudo: false
+python: 
+  - "3.3"
+  - "3.4"
+
+install:
+  - pip install tkinter 
+  - pip install parser
+
+notifications:
+  email: true
+
+branches:
+  only:
+    - master
