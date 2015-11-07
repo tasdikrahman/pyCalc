@@ -3,9 +3,11 @@ sudo: false
 python: 
   - "3.4"
 
-# install:
-#   - pip install tkinter 
+install:
+  - pip install -r requirements.txt
 #   - pip install parser
+
+script: python3.4 src/main.py
 
 notifications:
   email: false
