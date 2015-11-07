@@ -1,4 +1,6 @@
 #!/usr/bin/env python3.4
+## removed the global import
+## "explicit is better than implicit"
 import tkinter as tk
 import parser
 
@@ -31,7 +33,7 @@ def factorial(operator):
 
 def clear_all():
     """clears all the content in the Entry widget"""
-    display.delete(0, END)
+    display.delete(0, tk.END)
 
 def get_variables(num):
     """Gets the user input for operands and puts it inside the entry widget"""
@@ -82,7 +84,7 @@ for column in range(MAX_COLUMN):
     root.rowconfigure(column,pad=3)
 
 display = tk.Entry(root, font = ("Calibri", 13))
-display.grid(row = 1, columnspan = 6    , sticky = W+E)
+display.grid(row = 1, columnspan = 6 , sticky = tk.W + tk.E )   
 
 one = tk.Button(root, text = "1", command = lambda : get_variables(1), font=FONT_LARGE)
 one.grid(row = 2, column = 0)
