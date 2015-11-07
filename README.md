@@ -22,17 +22,24 @@ A simple calculator made using `tkinter`.
 
 ##Executable:
 
+####Version1.0
+
 You can download the executable for 
 
-* `*nix` based systems and `Mac` users: [Download executable](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc?raw=true)
-* windows : Adding executable soon
+* `*nix` based systems and `Mac` users: [Download executable for *nix/Mac](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc_v1?raw=true)
+~~* windows : Adding executable soon~~
+* `windows` : [Download executable for windows](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc_v1.exe?raw=true)
 
 ### To-do
 
 * refactoring for adding `oop`'s 
 * adding other mathematical functions (eg: `log`, `ln` et el)
 * increasing the font for the GUI
-* Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)
+~~* Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)~~
+
+##Contributing
+
+Feel free to fork it!
 
 ## License :
 
