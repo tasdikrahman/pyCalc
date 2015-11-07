@@ -50,11 +50,11 @@ $ ./main.py
 
 ##Contributing
 
-- Feel free to Fork it
-- Create your feature branch (`git checkout -b my-new-awesome-feature`)
-- Commit your changes (`git commit -am 'Added <xyz> feature'`)
-- Push to the branch (`git push origin my-new-awesome-feature`)
-- Create new Pull Request
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-awesome-feature`)
+3. Commit your changes (`git commit -am 'Added <xyz> feature'`)
+4. Push to the branch (`git push origin my-new-awesome-feature`)
+5. Create new Pull Request
 
 ## License :
 
