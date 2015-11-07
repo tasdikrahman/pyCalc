@@ -30,6 +30,17 @@ You can download the executable for
 * `windows` : [Download executable for windows](https://github.com/prodicus/pyCalc/releases/download/v1.0/pyCalc_v1.exe)
 * ~~windows : Adding executable soon~~
 
+**OR**
+
+You can do a `git-clone` of the repository
+
+```bash
+$ git clone https://github.com/prodicus/pyCalc.git
+$ cd pyCalc/src
+$ chmod +x main.py
+$ ./main.py
+```
+
 ## To-do
 
 * refactoring for adding `oop`'s 
@@ -39,7 +50,11 @@ You can download the executable for
 
 ##Contributing
 
-Feel free to fork it!
+- Feel free to Fork it
+- Create your feature branch (`git checkout -b my-new-awesome-feature`)
+- Commit your changes (`git commit -am 'Added <xyz> feature'`)
+- Push to the branch (`git push origin my-new-awesome-feature`)
+- Create new Pull Request
 
 ## License :
 
