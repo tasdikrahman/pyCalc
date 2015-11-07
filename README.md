@@ -4,7 +4,7 @@ A simple calculator made using `tkinter`.
 
 ## Features : 
 
-### Version1.0
+#### Version1.0
 
 * Cross-platform
 * easy to use
@@ -26,9 +26,9 @@ A simple calculator made using `tkinter`.
 
 You can download the executable for 
 
-* `*nix` based systems and `Mac` users: [Download executable for *nix/Mac](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc_v1?raw=true)
+* `*nix` based systems and `Mac` users: [Download executable for *nix/Mac](https://github.com/prodicus/pyCalc/releases/download/v1.0/pyCalc_v1)
+* `windows` : [Download executable for windows](https://github.com/prodicus/pyCalc/releases/download/v1.0/pyCalc_v1.exe)
 * ~~windows : Adding executable soon~~
-* `windows` : [Download executable for windows](https://github.com/prodicus/pyCalc/blob/master/dist/pyCalc_v1.exe?raw=true)
 
 ## To-do
 
