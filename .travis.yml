@@ -5,7 +5,12 @@ python:
 
 install:
   - pip install -r requirements.txt
-#   - pip install parser
+
+## for headless gui's
+## ref: http://docs.travis-ci.com/user/gui-and-headless-browsers/
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 
 script: python3.4 src/main.py
 
