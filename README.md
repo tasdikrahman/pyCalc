@@ -50,6 +50,8 @@ $ ./main.py
 
 ##Contributing
 
+Feel free to contribute
+
 1. Fork it.
 2. Create your feature branch (`git checkout -b my-new-awesome-feature`)
 3. Commit your changes (`git commit -am 'Added <xyz> feature'`)
