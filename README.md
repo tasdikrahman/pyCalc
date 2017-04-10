@@ -16,13 +16,13 @@ A simple calculator made using `tkinter`.
 
 * Supports `undo` and `AC`
 
-##Usage:
+## Usage:
 
 ![Usage](https://raw.githubusercontent.com/prodicus/pyCalc/master/assets/pyCalc_usage.gif)
 
-##Executable:
+## Executable:
 
-####Version1.0
+#### v1.0.0
 
 You can download the executable for 
 
@@ -46,7 +46,7 @@ $ ./main.py
 * [ ] increasing the font for the GUI
 * [ ] Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)
 
-##Contributing
+## Contributing
 
 Feel free to contribute
 
