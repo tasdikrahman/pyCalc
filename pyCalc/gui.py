@@ -1,9 +1,15 @@
 #! /usr/bin/env python3.4
 
-import tkinter as tk
+try:
+	import tkinter as tk
+	from tkinter import ttk
+except ImportError:
+	# Python 2
+	import Tkinter as tk
+	import ttk
+
 import parser
 import base64
-from tkinter import ttk
 from icons import icon_string
 
 
@@ -18,7 +24,12 @@ class TkGUI(tk.Tk):
 	NEW_OPERATION = False
 
 	def __init__(self):
-		super(TkGUI, self).__init__()
+		try:
+			super(TkGUI, self).__init__()
+		except TypeError:
+			# Python 2
+			tk.Tk.__init__(self)
+
 		self.title('Calculator')
 		self.resizable(width=False, height=False)
 
