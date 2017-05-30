@@ -41,7 +41,7 @@ $ ./main.py
 
 ## To-do
 
-* [ ] refactoring for adding `classes`
+* [x] refactoring for adding `classes`
 * [ ] adding other mathematical functions (eg: `log`, `ln` et el)
 * [ ] increasing the font for the GUI
 * [ ] Adding a `.exe` release for windows based systems.(currently has executable for `*nix` based systems)
