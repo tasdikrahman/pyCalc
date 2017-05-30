@@ -1,12 +1,14 @@
-# Base64 encoded icon string
+# Base64 encoded icon.gif
 # utf-8 character set
 
-icon_string = """iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
-WXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4QUdDRc5KQH9eAAAAXdJREFUOMuNkz1LA0EQhp/Zu5wJ
-aiBiE8UuEhRRU9kr1+iPsLKxEsQuhUVKwc7Gzh9gIaLolYIgAYOFCJoqGiwSFfyISby7tTGSi0nM
-VLuzO8/OOzMrAHY6h5NJYadzCUDT3cTJpPKNGGl47XTuFLDpzbacTGoDQDU5p+jdZhoLs/XEMlXX
-yLrrB/YBgKEEEXC99mUwDcFQgudrOmbgejpwwdcggEj7jP4AtNYsL8TxtcbJPTMQNqi7mkKp2htA
-RMjevTIYMXgo1whbipApHWvStmJjw2EKpRqup5lLRqlUfeaSUSbG+vG1/kcCYJmCPRvj7Frx9umx
-tz5JPGYBsHNUZP+81BlgKDjMlhuCGB+JEI9Z5B8/iUZMVhdHObgotwdoYH56qGUu5EdWH30hxcuH
-y1fTLAQAvq85uXxq6Qrc3FfYXklwW6ywtnuHoaSzhL9dgfxjhaXNKxBQLQPRDHjvBlIqEPj6+0DT
-bxwAFnr8TMdA3cmk+AbENnrtac/9lgAAAABJRU5ErkJggg=="""
+icon_string = """R0lGODlhEAAQAMZCADZyyzhzzDp0zDt1zD94zUB5zUB5zkF5zkJ6zkN6zkN7zkN7z0R7zkR7z0R8
+z0V8z0d+0Eh+0Eh/0Eh/0Ul/0Ep/0E6D0k+D0lCE0lSH01WI01iK1FmK1VmL1FqL1VuM1WOR12aT
+2GaU2GeU2GiU2GyX2XCb23Sd3HSe3Hae3Haf3Hif3Hyi3Xyj3X2j3n6k3n+l3n+l34Cm3oOn34Oo
+34So4Ims4Z675sTW8MXW8NHf9N3n9uDp9+bt+Onw+vP2/Pf6/fz9/v//////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////yH+
+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAH8ALAAAAAAQABAAAAeWgH+Cg4SFgw+IiYqIhA8NB5CR
+kIyDDBgxLpmaMRAOhAQvBgqjowUhHQmfLAuQDRUSCCQbqYMELBM2MxcgHweytIK2CyY1EREWBiOz
+qg4sKw0yFCUwHgiqETQwHCo5QkI3A58vEYgYIkI4PD/WgwoZKScoJy9APkE7AI0OCfwJDS09dGhg
+J2gRIgMBBCx40MjgIkMQCwUCADs="""
