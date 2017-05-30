@@ -1,4 +1,4 @@
-#! /usr/bin/env python3.4
+#! /usr/bin/env python
 
 try:
 	import tkinter as tk
